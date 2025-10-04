@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Happy Teachers Day - Sir Khalid Sahab</title>
+<style>
+  body {
+    margin: 0; 
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background: linear-gradient(135deg, #020111, #3a3a52);
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ffe7;
+    position: relative;
+    overflow: hidden;
+  }.card {
+    position: relative;
+    background: #011526;
+    width: 360px;
+    border-radius: 25px;
+    box-shadow:
+      0 0 20px #00ffe7cc,
+      0 0 40px #00ffe7aa,
+      0 0 60px #00ffe7aa;
+    padding: 35px 30px;
+    box-sizing: border-box;
+    text-align: center;
+    animation: floaty 4s ease-in-out infinite;
+    border: 2px solid #00ffe7;
+    z-index: 10;
+  }.icon {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    text-shadow:
+      0 0 15px #00ffe7dd,
+      0 0 30px #00ffe7aa;
+  }
+
+  h2 {
+    margin: 0 0 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow:
+      0 0 20px #00ffe7ee,
+      0 0 40px #00ffe7cc;
+  }
+
+  p {
+    line-height: 1.5;
+    margin: 0 0 40px;
+    font-size: 1.1rem;
+    text-shadow: 0 0 6px #00ffeca0;
+  }.signature {
+    font-style: italic;
+    font-weight: 600;
+    text-align: right;
+    color: #00ffebbb;
+    letter-spacing: 1.3px;
+    text-shadow: 0 0 10px #00ffeda0;
+  }
+
+  /* Floating animation */
+  @keyframes floaty {
+    0%, 100% {
+      transform: translateY(0);
+      box-shadow:
+        0 0 20px #00ffe7cc,
+        0 0 40px #00ffe7aa,
+        0 0 60px #00ffe7aa;
+    }
+    50% {
+      transform: translateY(-15px);
+      box-shadow:
+        0 0 35px #00ffe7ff,
+        0 0 60px #00ffe7ff,
+        0 0 90px #00ffe7ff;
+    }
+  }.float-container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 360px;
+    height: 60px;
+    pointer-events: none;
+    transform: translateX(-50%);
+    z-index: 20;
+  }.float-emoji {
+    position: absolute;
+    font-size: 32px;
+    opacity: 0.85;
+    user-select: none;
+    text-shadow:
+      0 0 10px #00ffe7ff,
+      0 0 20px #00ffe7cc;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes floatUpDown1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+  }
+
+  @keyframes floatUpDown2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(15px); }
+  }.emoji1 { left: 20px; animation: floatUpDown1 6s infinite alternate; }.emoji2 { left: 160px; animation: floatUpDown2 7s infinite alternate; }.emoji3 { left: 250px; animation: floatUpDown1 5.5s infinite alternate; }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="icon">💻</div>
+  <h2>Happy Teachers' Day!</h2>
+  <p>
+    Dear Sir Khalid Sahab, 🧑🏻‍🏫<br><br>
+    Thank you for being a wonderful Programming Teacher and HOD.<br>
+    Your guidance lights our way in coding and life ✨.<br><br>
+    Wishing you a fantastic day filled with joy and appreciation! 💾
+  </p>
+  <div class="signature">- From Aftab Ahmed Rind 👨🏻‍💻</div>
+</div>
+
+<div class="float-container">
+  <div class="float-emoji emoji1">< 🖱️ ></div>
+  <div class="float-emoji emoji2">🐍</div>
+  <div class="float-emoji emoji3">⌨️</div>
+</div>
+
+</body>
+</html>
